@@ -1,5 +1,5 @@
 {
-  "name": "webpack_for_simple_site",
+  "name": "webpack_for_simple_site_typescript",
   "private": true,
   "version": "1.0.0",
   "description": "webpack_for_simple_site_typescript",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kazuma-hitomi/webpack_for_simple_site"
+    "url": "https://github.com/kazuma-hitomi/webpack_for_simple_site_typescript"
   },
   "main": "main.js",
   "scripts": {
