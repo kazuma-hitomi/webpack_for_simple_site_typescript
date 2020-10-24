@@ -19,13 +19,18 @@ module.exports = {
     rules: [
       {
         enforce: 'pre',
-        test: /\.ts$/,
+        test: /\.(js|ts)$/,
         loader: 'eslint-loader',
         exclude: /node_modules/,
       },
       {
         test: /\.ts$/,
         use: ['babel-loader', 'ts-loader'],
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.js$/,
+        use: 'babel-loader',
         exclude: /node_modules/,
       },
       {
@@ -78,5 +83,10 @@ module.exports = {
   ],
   optimization: {
     minimizer: [new OptimizeCSSAssetsPlugin()],
+  },
+  resolve: {
+    extensions: [
+      '.ts', '.js',
+    ],
   },
 }
